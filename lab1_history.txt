@@ -1,0 +1,118 @@
+  210  whoami
+  211  whoaim
+  212  whoami
+  213  echo 'Hello World'
+  214  date
+  215  cal
+  216  man cal
+  217  cal -3
+  218  history
+  219  clear
+  220  pwd
+  221  cd /
+  222  cd ..
+  223  pwd
+  231  ls
+  232  ls -l home/
+  233  ls -l home/nikita
+  234  ls
+  235  ls -l 
+  236  cd
+  237  mkdir fruits
+  238  cd /
+  240  touch /tmp/temp
+  241  touch apple.txt banana.txt pineapple.txt lion.txt
+  242  ls
+  243  touch ../animals cat.txt dog.txt elephant.txt 
+  244  cd
+  245  ls
+  246  cd animals
+  247  history
+  248  ls
+  249  cat animals
+  250  mkdir animals
+  251  rm animals
+  252  ls
+  253  mkdir animals
+  254  ls
+  255  cd fruits
+  256  touch ../animals cat.txt dog.txt elephant.txt 
+  264  mv lion.txt ~/animals
+  265  ls
+  266  cd
+  267  ls
+  268  cd animals
+  269  ls
+  270  cd ~/fruits
+  271  ls
+  272  mv cat.txt ~/animals
+  273  mv dog.txt ~/animals
+  274  mv elephant.txt ~/animals
+  275  ls
+  276  ls -l fruits
+  277  ls -l 
+  278  ls b* 
+  280  ls a*
+  281  ls [bi]*
+  282  cp /etc/passwd ~
+  283  cat /etc/issue
+  284  touch lion
+  285  ls
+  286  mv lion ~/animals
+  290  mv pineaple pineapple.txt
+  291  ls
+  292  man wc
+  293  wc -l /etc/passwd
+  294  ln -s /etc/passwd passwd_link
+  295  ln .bash_history history_hard
+  297  ls -l
+  298  rm friuts/apple.txt
+  299  rm fruits/apple.txt
+  300  mkdir rmme
+  301  rmdir rmme
+  302  rmdir fruits
+  303  rm -fr fruits
+  304  cat /etc/passwd /var/log/boot.log
+  305  cp /etc/init.d/ ~
+  306  cp -r /etc/init.d/ ~
+  307  rm -fr etc/
+  308  ls
+  309  cut -d: -f1 /etc/passwd | sort
+  310  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+  311  cut -d: -f1,2,3,4 /etc/passwd | column -ts: | less
+  312  grep :/bin/bash /etc/passwd | wc -l
+  313  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r
+  314  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | head -n 25
+  315  sudo apt install rpm
+  316  rpm -ql man-db | xargs -l du    2> /dev/null  | sort -n
+  317  top -b -n1 | sort -n -k 3
+  318  top -b -n1 | tail -n+8 | cut -c7-  | tr -s ' ' '\t' | cut -f11,5
+  319  sort -n -t ':' -k1 /etc/passwd | tr ":" " "
+  320  sort -n -t ':' -k1 /etc/passwd | tr ":" " " | cut -f1,7
+  321  yum install -y git
+  322  cd /usr/share/doc/git-*
+  323  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+  324  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+  326  ls
+  327  cd ../
+  328  ls
+  329  tr '[:lower:]' '[:upper:]' < user-manual.txt |  tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+  330  tr -cs '[:alpha:]' '\n' < user-manual.txt | less | grep -E ........ | sort | uniq -c | sort -rn | head
+  331  ping ya.ru
+  332  curl wttr.in
+  333  sudo apt install curl
+  334  curl wttr.in
+  335  hostname -I
+  336  curl ifconfig.me
+  342  less var/log/messages
+  343  id
+  344  whoami
+  345  sudo id
+  347  ls
+  348  sudo less log/messages
+  350  ls
+  351  cd /
+  352  su
+  353  whoami
+  354  cd
+  355  history > lab1_history.txt
