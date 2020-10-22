@@ -1,0 +1,56 @@
+  
+.:
+итого 12
+d---rwxr-x 2 nikita nikita 4096 окт 22 16:04 dir
+-rw-rwx--- 1 nikita nikita    5 окт 22 16:01 file
+-rw------- 1 nikita nikita    0 окт 22 16:13 file1
+-rw-rw-rw- 1 nikita nikita    0 окт 22 16:18 file2
+-rw-rw-rw- 1 nikita nikita  798 окт 22 16:48 history.txt
+-rw-rw-r-- 1 nikita nikita    0 окт 22 16:03 new_file
+ls: невозможно открыть каталог './dir': Отказано в доступе
+  
+------------------------------------------------------------------------------------------  
+  
+  
+  393  mkdir test
+  394  ls
+  395  cd test
+  396  touch file
+  397  man chmod
+  398  chmod ugo-rwx
+  399  chmod ugo-rwx file
+  400  echo "test" > file
+  401  cat file
+  406  chmod u+w file
+  407  ll
+  408  echo "test" > file
+  409  cat file
+  410  chmod u+r
+  411  chmod u+r file
+  412  ls -l
+  413  chmod ug+r file
+  414  ll
+  415  cat file
+  416  mkdir dir
+  417  touch new_file /dir/
+  418  touch new_file dir/
+  419  ls -r
+  420  ls dir/
+  421  delete 1
+  422  echo "file 2" dir/new_file
+  423  echo "file 2" > dir/new_file
+  424  chmod u-rwx
+  425  chmod u-rwx dir
+  426  ll
+  427  cat dir/new_file
+  428  chown --help
+  429  chown root file
+  430  umask --help
+  431  umask 077
+  432  touch file2
+  433  ll
+  434  umask 0000
+  435  mv file2 file1
+  436  touch file2
+  437  ll
+  438  cat file
